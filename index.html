@@ -1,7 +1,652 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zack A. Goodman's personal website">
+  <meta name="keywords" content="Zachary,Zack,Goodman,zagoodman,zgoodman,zackagoodman">
+  <meta name="author" content="Zack Goodman">
+  <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Zack A. Goodman</title>
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Roboto', sans-serif !important;
+    }
+
+    p,
+    ol,
+    ul {
+      font-size: 18px;
+    }
+
+    .smfont {
+      font-size: 14px;
+    }
+
+    a,
+    .coolhover {
+      -o-transition: .3s;
+      -ms-transition: .3s;
+      -moz-transition: .3s;
+      -webkit-transition: .3s;
+      transition: .3s;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    blockquote {
+      margin: 0;
+      background: #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    .coolhover {
+      color: #fff;
+    }
+
+    .coolhover:hover {
+      color: gray;
+      text-decoration: none;
+    }
+
+    .carousel .carousel-indicators li {
+      background-color: #fff;
+      background-color: rgba(70, 70, 70, .25);
+    }
+
+    .carousel .carousel-indicators .active {
+      background-color: #444;
+    }
+  </style>
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">Zack A. Goodman</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbartoggle">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sport">Sport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#writing">Writing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#photography">Photography</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section class="row mb-5">
+      <div class="col-auto">
+        <img src="http://acsweb.ucsd.edu/~zgoodman/images/ZackAGoodman.jpg" alt="image of Zack" height="300" />
+      </div>
+      <div class="col-8 justify-content-center">
+        <h1>Zack A. Goodman</h1>
+        <p>Economics Ph.D. candidate at UC San Diego</p>
+        <h2>Links:</h2>
+        <ul>
+          <li><a href="https://github.com/zagoodman" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/zagoodman" target="_blank">LinkedIn</a></li>
+          <li><a href="http://acsweb.ucsd.edu/~zgoodman/pdfs/Goodman_CV.pdf" target="_blank">CV</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="mb-4" />
+
+    <section id="about" class="mb-5">
+      <h2>About</h2>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <p>Welcome to my site! Here I showcase things I "love to do" including <a href="#research">research</a>, <a href="#projects">projects</a>, <a href="#sport">cycling and triathlon</a>, <a href="#writing">writing</a>, and <a
+              href="#photography">photography</a>.</p>
+        </div>
+        <div class="col-12 col-md-8">
+
+          <blockquote class="px-4 pb-2" cite="https://www.facebook.com/AdamMGrant/posts/when-you-meet-someone-new-dont-ask-what-do-you-doit-limits-what-people-share-abo/2321487491235329/">
+            <p>When you meet someone new, don’t ask "What do you do?" It limits what people share about themselves to a job description.<br /><br />
+              Instead, try "What do you love to do?" It ignites curiosity and invites people to express their distinctive interests.</p>
+            <footer>
+              <p class="pl-5">—Adam Grant</p>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <hr class="mb-4" />
+
+    <section id="research" class="row mb-5">
+      <div class="col">
+        <h2>Research</h2>
+        <p>My graduate training is in labor economics, health economics, and public finance. My academic research primarily investigates the effect of policies on consumer health behaviors as well as the effectiveness of pedagogical technologies.
+          Below are some select works.</p>
+
+        <!--Carousel Wrapper-->
+        <div id="researchcards" class="carousel slide pb-5" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators indicators-light">
+            <li data-target="#researchcards" data-slide-to="0" class="active"></li>
+            <li data-target="#researchcards" data-slide-to="1"></li>
+          </ol>
+          <!--Slides-->
+          <div class="carousel-inner">
+            <!--First slide-->
+            <div class="carousel-item active p-3">
+
+              <div class="col-md-4 float-left">
+                <div class="card mb-2 shadow">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">The Effect of Supplementary Videos on University Educational Outcomes</h5>
+                    <p class="card-text smfont">With Melissa Famulari</p>
+                    <button type="button" class="btn btn-outline-primary" href="#">Download</button>
+                    <button type="button" class="btn btn-outline-info" href="#">GitHub</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 float-left">
+                <div class="card mb-2 shadow">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">The Effect of Sugar-Sweetened Beverage Taxes in the United States: Evidence from Scanner Data</h5>
+                    <p class="card-text smfont">with Jacob Orchard</p>
+                    <button type="button" class="btn btn-outline-primary" href="#">Download</button>
+                    <button type="button" class="btn btn-outline-info" href="#">GitHub</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 float-left">
+                <div class="card mb-2 shadow">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">The Role of Liquidity in Food Choice: Evidence from the Economic Stimulus Act of 2008</h5>
+                    <p class="card-text smfont">Desc</p>
+                    <button type="button" class="btn btn-outline-primary" href="#">Download</button>
+                    <button type="button" class="btn btn-outline-info" href="#">GitHub</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--Second slide-->
+            <div class="carousel-item">
+
+              <div class="col-md-4 float-left">
+                <div class="card mb-2 shadow">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Paper 4</h5>
+                    <p class="card-text smfont">Coming soon!</p>
+                    <button type="button" class="btn btn-outline-primary disabled" href="#">Download</button>
+                    <button type="button" class="btn btn-outline-info disabled" href="#">GitHub</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 float-left">
+                <div class="card mb-2 shadow">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Paper 5</h5>
+                    <p class="card-text smfont">Coming soon!</p>
+                    <button type="button" class="btn btn-outline-primary disabled" href="#">Download</button>
+                    <button type="button" class="btn btn-outline-info disabled" href="#">GitHub</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 float-left">
+                <div class="card mb-2 shadow">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Paper 6</h5>
+                    <p class="card-text smfont">Coming soon!</p>
+                    <button type="button" class="btn btn-outline-primary disabled" href="#">Download</button>
+                    <button type="button" class="btn btn-outline-info disabled" href="#">GitHub</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="px-5">
+          <button type="button" class="btn btn-outline-secondary float-left" role="button" href="#researchcards" data-slide="prev">Previous papers</button>
+          <button type="button" class="btn btn-outline-secondary float-right" role="button" href="#researchcards" data-slide="next">More papers</button>
+        </div>
+      </div>
+    </section>
+
+    <hr class="mb-4" />
+
+    <section id="projects" class="row mb-5">
+      <div class="col">
+        <h2>Projects</h2>
+        <p>Here are some side projects that that I'm working on.</p>
+
+        <article class="ml-3 p-3">
+          <h4>GPSRace</h4>
+          <p><a href="https://www.gpsrace.cc">GPSRace</a> started as a collaboration with my brother, <a href="https://www.justgood.dev">Justin Goodman</a>, to help cyclists compete safely and equitably during the pandemic. It has since grown to
+            become the easiest way to host a race with zero overhead and very little time.</p>
+          <p>When the pandemic started, many cyclists turned to virtual methods to continue competing. Conventional "virtual races" are location agnostic: racers are required to complete a set <em>distance</em> anywhere in the world. While this is
+            convenient, it destroys the legitimacy of the results since the course itself play an enormous role in finish time.</p>
+          <p>Our solution? Use GPS data to determine completion times on the same course. GPSRace works as follows:</p>
+          <ol>
+            <li>The race organizer creates a route using GPS data.</li>
+            <li>Racers register for the race, download the route GPS file, and complete the route while recording with a GPS-enabled device like a bike computer or smartphone.</li>
+            <li>After finishing, racers upload their activity file to the webiste, which calculates their finishing time and ranking.</li>
+          </ol>
+          <p>Besides encouraging social distancing, GPSRace adds a second safety feature to races: <em>neutral segments</em>. Time accrued during neutral segments does not count towards overall time, allowing race organizers to neutralize roads with
+            lots of traffic, stop lights, and stop signs.</p>
+          <p>By creating this platform, we hope to enable races that wouldn't otherwise happen and ultimately encourage more cyclist to join the sport. Eventually, we plan to support running and triathlon as well.</p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="mb-4" />
+
+    <section id="sport" class="row mb-5">
+      <div class="col">
+        <h2>Cycling and Triathlon</h2>
+        <p>Most weekends you'll find me on a long ride or run, probably with my teammates on the UCSD Triathlon or Cycling clubs. Here are a few select memories from the saddle.</p>
+        <article class="ml-3 mb-5 p-3 bg-white rounded shadow">
+          <h4>Paratriathlon Guiding</h4>
+          <div class="row">
+            <div class="col-lg-4">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Bz4TcGtn6O3/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12"
+                style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/Bz4TcGtn6O3/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                    target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                            <g>
+                              <path
+                                d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                              </path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg></div>
+                    <div style="padding-top: 8px;">
+                      <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                      <div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                        <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                      </div>
+                      <div style="margin-left: 8px;">
+                        <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                        <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                      </div>
+                      <div style="margin-left: auto;">
+                        <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                        <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                        <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                      </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                    </div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a
+                      href="https://www.instagram.com/p/Bz4TcGtn6O3/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Zack A. Goodman (@zackagoodman)</a> on <time
+                      style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-07-14T02:04:41+00:00">Jul 13, 2019 at 7:04pm PDT</time></p>
+                </div>
+              </blockquote>
+              <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+            <div class="col-lg-8">
+              <p>Paratriathlon, for visually-impaired athletes, is a team sport. VI athletes compete alongside a guide (or affectionately, a "seeing-eye human") who completes the swim and run legs while tethered to the athlete and the bike leg using
+                a tandem bicycle. I've written about my experience guiding and how it works on <a href="https://qr.ae/TWvxTG" target="_blank">Quora</a>.</p>
+              <p>I've been fortunate to work with several extremely talented VI paratriathletes, all introduced to me by San Diego-based elite VI paratriathlete <a href="https://www.instagram.com/nosightnolimits/ target=" _blank"">Amy Dixon</a>,
+                often at her
+                <a href="https://www.nosightnolimits.com/ target=" _blank"">Camp No Sight No Limits</a>. Most recently, I've been racing with <a href="https://www.facebook.com/KyleCoonSpeaks/ target=" _blank"">Kyle Coon</a>, who is currently training
+                at the Colorado Springs OPTC in hopes of qualifying for the <strike>2020</strike>2021 Paralympics. Kyle is as gifted in writing as he is in triathlon, and he posts regular updates to his blog (<a
+                  href="https://kylecoon.com/2019/08/03/magog-paratriathlon-world-cup-race-report/" target="_blank">here's a sample</a> about our race at the Paratriathlon World Cup in Magog, Canada).</p>
+              <p>As the elite paratriathlon circuit consists of sprint races, I've shifted my training focus from long distance to sprint triathlons so I can perform my best as a guide. You can follow my training on <a
+                  href="https:www.strava.com/athletes/zagoodman" target="_blank">Strava</a>.</p>
+            </div>
+          </div>
+        </article>
+        <article class="ml-3 mb-5 p-3 bg-white rounded shadow">
+          <h4>Everesting</h4>
+          <div class="row">
+            <div class="col-lg-5">
+              <p><a href="https://everesting.cc" target="_blank">Everesting</a> is climbing the elevation of Mount Everest (29,029') on your bike, on the same hill, in the one ride - most cyclists' definition of <a
+                  href="https://www.rei.com/blog/climb/fun-scale">type II fun</a>.</p>
+              <p>I decided to Everest in part thanks to the "<a href="https://source-e.net/rider-resources/casey-cohenmeyer-sneakily-snags-sourdough-at-the-swift-sourdough-seekers-challenge/" target="_blank">Swift Sourdough Seekers</a>" challenge
+                hosted by San Diego-based pro cyclist Robin Carpenter. By completing the most repeats on Mount Soledad and most elevation in a single ride, I earned myself two loaves of Robin's famous homemade sourdough.</p>
+            </div>
+            <div class="col-lg-auto">
+              <iframe height='350' width='550' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/3468547308/embed/6555fb94b401e413129f8841ce5aa410795c8804'></iframe>
+            </div>
+          </div>
+        </article>
+        <article class="ml-3 mb-5 p-3 bg-white rounded shadow">
+          <h4>Ironman</h4>
+          <div class="row">
+            <div class="col-lg-4">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B3eI5sOn-Uz/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12"
+                style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/B3eI5sOn-Uz/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                    target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                            <g>
+                              <path
+                                d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                              </path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg></div>
+                    <div style="padding-top: 8px;">
+                      <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                      <div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                        <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                      </div>
+                      <div style="margin-left: 8px;">
+                        <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                        <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                      </div>
+                      <div style="margin-left: auto;">
+                        <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                        <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                        <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                      </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                    </div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a
+                      href="https://www.instagram.com/p/B3eI5sOn-Uz/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Zack A. Goodman (@zackagoodman)</a> on <time
+                      style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-10-11T08:17:55+00:00">Oct 11, 2019 at 1:17am PDT</time></p>
+                </div>
+              </blockquote>
+              <script async src="https://www.instagram.com/embed.js"></script>
+            </div>
+            <div class="col-lg-8">
+              <p>I remember hearing about Ironman for the first time and thinking no way could I ever swim 2.4 miles, bike 112, and immediately after run a marathon...</p>
+              <p>Fast forward a few years and I'm three down:</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Race</th>
+                    <th score="col">OA Rank</th>
+                    <th score="col">AG Rank</th>
+                    <th score="col">Time</th>
+                  <tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">2018 Ironman Canada</th>
+                    <td>57</td>
+                    <td>2</td>
+                    <td>10:50:26</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2018 Ironman Maryland</th>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>9:07:25</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2019 Ironman World Championships</th>
+                    <td>296</td>
+                    <td>35</td>
+                    <td>9:37:48</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Now I'm taking a break from Ironman to focus on paratriathlon guiding.</p>
+            </div>
+          </div>
+        </article>
+        <article class="ml-3 mb-5 p-3 bg-white rounded shadow">
+          <h4>Biking across the USA</h4>
+          <div class="row">
+            <div class="col-lg-6">
+              <p>Between graduating from NC State and starting grad school at UC San Diego, I biked from Ocean City, Washington to Ocean City, Maryland starting (literally) in the Pacific Ocean and ending my trip dipping my bike in the Atlantic. For
+                the first 2/3 of the trip I followed the Adventure Cycling Association's <a href="https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/northern-tier/" target="_blank">Norther Tier</a> route, after which I
+                meandered my way around the Great Lakes and south towards my home state of Maryland.</p>
+              <p>Though I began my ride solo, the Northern Tier route is well-travelled I met many cyclists along the way, rarely biking by myself for long. I created a compilation video of Snapchats taken during my trip, which you can view to the
+                right.</p>
+            </div>
+            <div class="col-lg-auto">
+              <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/Yb2Iu-uf6p0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="mb-4" />
+
+    <section id="writing" class="row mb-5">
+      <div class="col">
+        <h2>Writing</h2>
+        <p>Here I list some select non-academic works that I've written.</p>
+        <article class="ml-3 mb-5 p-3">
+          <h4><a href="https://ironprofessor.com/my-n1-cyclical-ketogenic-experiment/" target="_blank">LCHF diets for longevity and endurance performance</a></h4>
+          <p>"I bring you aboard my nutrition expedition that began as a casual search for improved performance and turned into a borderline obsession spending every free minute dissecting articles, listening to podcasts, and reading about people’s experiences with ketosis. For the first time in my life, I’ve taken an interest in something biology-related (sorry med school friends)."
+        </article>
+      </div>
+    </section>
+
+    <hr class="mb-4" />
+
+    <section id="photography" class="row mb-5">
+      <div class="col">
+        <h2>Photography</h2>
+        <p class="mb-5">I've recently been exploring my interest in photography. Here is a sampling of my work.</p>
+        <article class="ml-3 mb-5 p-3 bg-white rounded shadow">
+          <!-- https://www.publicalbum.org/blog/embedding-google-photos-albums -->
+          <h4>Sports</h4>
+          <p>Sports are my favorite thing to shoot, partially because I'm a fan, and partially because I like thrill that comes with capturing a moment that exists for mere milliseconds. The complete lack of control over one's environment makes
+            sports photography challenging but allows the photographer to simply do the best they can with the situation they've been given and shoot in the moment without worrying about perfection.</p>
+          <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;" data-link="https://photos.app.goo.gl/mBuUgua97CAjiggP6" data-title="Sports Photography" data-description="21 new photos added to shared album">
+            <object data="https://lh3.googleusercontent.com/dKTzBCFIq0_035kSp2OUSo64YTnjCIic1GL5cH4IMLKnwdjaHsGFvcFrNTWA57wnZKgoe67E5U7D7AExA34_qJ0xfR__Kk6zaZWI6-iC3NYWO9xHVBNF7lGifH6hGRpRxYYhNPZEPXI=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/uLVlB6yhfKcjBrwCQzR4dzgIOUj6pHch-0nHpHjyZcypnJW7yLTt_e5_VWIULP9choyMjNBl4ZcwSuFq7w9C2g4dVH3TOPSJ7kwwf6yIUjozBK8j2PvMybPVeIdMBYB2Ffw-O8ru4j0=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/DY4-Z8qoFRh1f8YahHTe4MLMiIilzgBfcoH4aCEXkjNm-KiCnHLJVfd1qRUrECYAtW02HxNTRwTetV_T_Ey5hNHQA_22Go-ATFyDXPWFpttRNEUQTOHKriLNEnf6FhoGG83n975nk74=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/I2007L2YzDY46v-Ovwu38MKstNEJyI7PbiFcHCqgLK-tBdTM-_JC2CSqNC5E5YXa5AJ6budfHoTwdhg0WT3N17bjSFtH17L-owV6IkQL_dCGAaCrDnrsQawrKDe5LcThdNHCC6ez-zQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/y8k_26BrkD0SAlx96KjqnWnrp1xwK3mC8eNdvuh090hSOhiKVvZ-cWtAUKxJGZWgTb9RDdLkv-cizqW_MtSSqGEiRfhAwyNpGXPiYu4z6mcvnEz3PeFdSq-CcWYLTObknJRM02ZCp0A=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/82FmgDkwbMAA69ft0-zG3Wit96DTnic9_LmW10zEJ6Xk8QLtPAMMepZHVKIPujOBeBxD9xVV3SGXtwLwaLT0BaCAUgRa6GLwLTjqeMuOpRwVDYeMGgLtSp9R05TbkbhVf32YozxCACU=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/OMnHkCPVLwsEFg_ZXj88uWAQ3p0NJaYRHG5R3k4SyBJexjtfA3VXQhhD1xbNPPLsacBK7n2PnSovqw6kdznMU96b8bwtysuqPbwlQtNDzioJSZzM80i01YmWuI9qA3JriGGAg_P3TWU=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/GIMSfyhUhekbxGa4VBWIdk30Zsy6xCCjkx8RyOxVfnECTSb2BObNhvgpdbnJ9V7_CHIQXOvdBgMo4-uz46a9tU9sNE4x2fTKe0CualQELTyZ-RZgR9tcKBn9q6Wc780Vefy40yY_m70=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/ueYsJ1j5QJzrMjd4VUA41mdv3R3RXCm0ydP9BEUmJf14borI8bVTLL10x1OfA97znzlUGNvQOOQAGKcnJ0DtdPi3JwsnrDMA5L4LDVya6SwcMldxRXjxI6z0Ru77nODKhxUyt57INfQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/HE8NF1047gB-R1yLKhdnG0-LmGVDt-Aed-LpLB-eF5Aipvq3llQRfOCoNAGKkdFG5ozeAEd2gJEkQF3OdnKpC7lkMEwYt8Gq9qlgAofbDomBrHWkcoxadzJULXw1DjYOuIf9rxX-8K0=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/99g4rQ4wDPD8PF9-YiwX7-os4upcrJyH8XBpWIJgxk5v8W3jYQaz3qBdeUTZpu2JH3Q7pasio3Q6mDxX2-WG1EXkJrYVmQ3i8TLbUCPWJ8fQjejHHAnrk20bWzml7vq-oLnvqO6MWFQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/f7TkJwg7Cc8eQiBl3zPZTxaYJbJWpHSDmZ3Yd6OU3fJYPGzjBaUHH0biwgWbX0M4kxRyDhBEL8tfYuxXj82ZQ61hWRrK46fFbGEMvOBRVcL3xXMnalu0tA_LMTuO0Osc6y2hWOAJ3Kc=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/_B7sq2uaGYIQOpuyQbRdq1zeSzNbXvU0U9y6mhwIHPy0NGu6m57TA9Ak_NejAYhuvPN1zag0onYNEziKRbgQNvZ_KJ6_2P3ggKODAgqN9dEk2OM3S-cr-3-l3u6lDHVy-3VDhuiYHNI=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/zWyQu08HOFAUAP373blisl5yu4B-CUpgE0UppKB8aujdR2xe2O3QtiFILvoftJxW2xPRCiYJeyVwteGU_xKqt9WTFXYJCTFOUQ48kAtjEudiPul9Ew8CV2YCe5uj0BcnTbP4k9kBS8E=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/lTKNL3kCfVcs8Zxby-OkuW8tCDdJhbZBNn0MKO3BsMRARiCqWJKYhrhLsiILGngQMqY4hFXfnHuRosMjhh98gnbtK7-Cs3y1eQQI5EGVWV4qsVXnajYT9FILt0N9xBDKIMBm-be8VcY=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/cxUsPL89TOMp93RsJHL5UHc_APj2EYhWe8bHmx3lr_wL4Nh9I9bXIHTQsyrQ1B2zxjwNkr77nLyt31JfMyQZ4_MCqKDm-L51Dj142dd8uCtWhtV_vFLV6I6YRnTQhqC_xWi2IGgWdCU=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/r7g1XtF_7axCn6PRCHw-bVWajZLJECN_DLZHxQHS1p9recp6bbYH19GxvxLOUMJH3MmJyjU0yoPv7JbiU8nHYqpQSXp07X3V9ho4iYiyuY4Q2XdV4bSTGX-CGitL79G6PAUPw3TAx6M=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/iIsX6EsUovOuJRN6TsRiiBozZQrSfCS0FbuU5K5xYARaG9lYISWbWH4jF2Tno5Rttxrw8CKo2UaI9MYj7gwJyTWSxF4IPjRTLgTGo_QNgQTj2O46Bb9uXpEgOA2caeW4B_UMUOkUYFk=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/qyepif-rCc9QY7EY6siDDx105rsltSwFAhbMShIo2gdLBHnFwycEHlaEklpBkubOLDRtXoEWjpIRGVJbi_qrjqRRwRp3w7ZOTVIfJUv5srRHPZLRpfD0N-wPyO045T8DkI3FINibD7E=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/l6_83sXro1WZEOsKUm_DJyc4JNhDuDwB6rhPO26aTP48KZn17U_9z1auewt08SnRwOpW9P756H3700akKy3Lo5No50_hNphuUUpcs79YlcdgLdIjllTOD5pV0-sCirvCS8KTV7FY2jQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/snsVzgyd7iwwsPVIJ_C6haeyNWyi0Ba8NKR54I8jLAqi-CHUdYMQq_1scfVfp1fkrGqjruD1fS3FvntsgwtMTFN8r4LsCpYpMo65kBztsED-5UkWRLy_IlL1ScKad4p2ByggHl31Ayc=w1920-h1080"></object>
+          </div>
+        </article>
+
+        <article class="ml-3 mb-5 p-3 bg-white rounded shadow">
+          <h4>Nature</h4>
+          <p>While sports are the most fun to shoot, nothing is more beautiful than nature. It's a blessing to live in Southern California where beaches, mountains, cliffs, sunsets, and wildlife are all readily accessible. The bioluminesent red tide
+            in San Diego made for some fun nighttime photography, too.</p>
+          <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;" data-link="https://photos.app.goo.gl/GHD91uFKJ8SD2LZB8" data-title="Nature and Outdoor Portraits" data-description="18 new photos added to shared album">
+            <object data="https://lh3.googleusercontent.com/LZ556_yk131mLieewOhQuAWhUMYC_7TeC_ts089Z5Vysimamk4wTZkPRsSdfZztl_qqVWkM-R7Qp5xhBJ36XfhANuqJBXv7FUyHzRwlx1zwLQrRw7kCdzlymKgdRjPlZ3k0DD1gqDM4=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/oYwMf2UP0ncBhfmFsroAXGAcLPM4wB_pULqzlGSdW8fZ2n5MqEkII3XKaaXf8kLckAdwUmLqupxQpEhoBw3C45_XVXxW2aBOyMBbj7JYQORcqa1ApSwmMJJOFfMPmAH8u_ZzLKbQ-7I=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/XoUNVtwOpOugxxqWWSlNHuTX7ZFCQQVed81oQmZ-KtLcIc9H_sSGVG2c4oOMpBhb8LgN0URxBRCGs78A0Bb87NEBINssGVAb9xk0Q-_RxdJcugv8ygEVj2816l4i44gLXhCDw04-n3g=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/ReWD8n6Mx5EQr29eEBjibel99SbxrUDhHL2xkxTzLkYMKc3HwVd6h0TkzWxB_1k_CPYQ0yjemAffd7rkc8D16ePgRMQIut-XNvvJV5lseyMstztBaGJqpvyTmcQFxn1vr8IENZ31aKM=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/dW1rW5pj3h-L_881QpA4h8o3lCnQRIHEfWnzJ84GTZNEP6zAS0v5j0PX0uFzInTjkk9qA1QBQPFL6tAlaae9-XMkN8qLhk3Rv9GI4JmTGQSqkkKsSvTsjL6LsONgEecBAfDA6Ed4cxE=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/C9hZ3UfGXudF7qpRysJfV54q-q257e8jEFZHhL4yWdw9INqVqDTigwINyTYWQD1VuPrEheigyEadrV4cBveQYdQJtroTSlXzlsrnLQJR5nl37BwxOhnWZH_Ec_Tu8Tt7J_UNjEg2c7k=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/rSO0KMeAFlbi3qS_2vuB3ZUJ4gLMZG3jFDw5DNd7RGMwkQoNBddbXiIvne_XklRah_eI1dMVigWDbz6mPMIVAIa9hRZeKr5Q39LUoKiPQDOZLV_1FByqt9BBz6-9Ct-uvmmPp31TK88=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/X2bbejHNHukrq2yBOk3bQh6XWLam9Qqm4BxkCX3aXPMwYL2Ulw2zbysi534XUm2_46-e8KQjFWRH9gZd_wdeUxW3NajDVJ4ThYLdW_ISdr5u2R9E8Ue8UOPObszRrL3wZg99SwGybGI=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/48qgNWFZCfrGYdZHgmI6wx68BV7kRzdEmEKe-L2LuNo8HNiwjADOxtHF615hTJxTLOrLYaLLCS3KT0CfJQkBpkOwV1-dyLmmrjeVyFG9Ydk-L2TfZ7_sHzcGE-on8wO-8WqL9oQA3bI=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/4cZH494fbibyhaBDOt50DRUO-TT3YTrPM9eECYa3v-CuxKArO8_Ur1TUouQ7fzvt7awDgbeFxuStATCJWIVEvK2opJ1MDAKrE1h0Ma0rNSu0JnlLqbm-kRj9E6H63ECeH_4cdlKSsfM=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/TyTXVXL-WH88fGFF4TjqQlD4BX6UUayR5GOiQMRQ3-GuQsJIa2vgd4wUHCzOUolOkpL5pk5hEFBjRfa0awY01pl5iw035a6f6vkY52rsGidxbIqxEC8Fjw_aCqsSV5GY3DflhYw0-cg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/7XzCeaO077NtvYyBsdMkVmzw5rkZo04cJF2PoeSwQRYTLcBZehB29VZXfD0dnqsOp7fouQZsvjWLdoVJFipNO23ZZ0Yl3zK_Y8XqcVucSCxiZWomxKqiLqSFbun07WjCKZ270iMrRBg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/KcQpIwb87eNbQvAl5dBofznqK7PsI1D-qXqm_IC11XfmLypL5UaMAQ-1_JlMmLlbfmp4VYSRCcJHogtr3HsNE66gPJtH4zI1shV-j9RLZwggKS3fRdOgjvqcuyLpc5yHv0UQeQ4Wjp8=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/FJZZ1IV0Q0Dh4kYTohUE0weKE_8Dpj8ZenhjP4swNKuMnOeJmBuSCd5odPHaZCFRrlNwyPNC80qrhG7yEjuBV7mhfFJsmQl3Ypajw8lcwVTF0q0W0ULhvflSBaSQgljLr1QdwT1F2IM=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/4FcuioPMceXP_ep9JPxdzaDEtAb72EPe06MNb_p-femLjrNo4B_LUxxGxeI4przYWGXNMnYGenK_wmZp3ECfE7KSXVTsKdMTAe48dg3hWnMGtQCO1-GMOezyCBo8df4fk-Z3NqgNgZk=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/VOAWG0yaU1IitzsT1B770L1wFy-LTg4qQnxM-zjdqjTbiw2k0gkHHpf4u5Nc7KgLgBdvh8aWZzMiw8WsebmDoVVkSBcSaoceujEw9-snRwKYepzywShXkxkBnGh2HrSQGlmET3TOvX8=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/fzylBOejRfvp5xnyk1hna-zTasy1cvXZFhEboQoG2MD_5wuoRXSdLlRmIu1mjtmjtRv7vTXVD4P1au3i_CFp1ljmyYcnSdGWVvaPiNJyd0KoAjmQVfehZUl1FRBFNi4qB-KqVBN-3KM=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/PqbEfoXUTFUoLcci6aV_-6TOtW8G20NSRnH2aD4gTg7FfBeTKI008La4AQFELK6sY6FyBllPRXOVUfSzqL0j7XWa9YbM6yZ27clY_zWR7T49blgosfmHGbZ71Ub-c8-p52DrZXUDXH0=w1920-h1080"></object>
+          </div>
+        </article>
+
+        <article class="ml-3 mb-5 p-3 bg-white rounded shadow">
+          <h4>Worthy Photoshoot</h4>
+          <p>I did a shoot for <a href="https://instagram.com/worthyfoods">Worthy Foods</a>, a company that makes nutritious smoothie bowls. Check out my photos featured on their <a href="https://instagram.com/worthyfoods">Instagram</a>!</p>
+          <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;" data-link="https://photos.app.goo.gl/DpXKpqZgzs4HikSPA" data-title="Worthy Photoshoot" data-description="12 new photos added to shared album"
+            data-delay="5" data-repeat="true">
+            <object data="https://lh3.googleusercontent.com/Nc2Vz50A_VYpfYL3MVpPp74zHhzjykrfwF3xoWnkf5ZDTY2gPjQS_YNzsgNOqVGiXOFxQZCLOIc2SHw57F-Vh3--mRg5Tn5Zl3uTffSgK4ZtKcyb2BDI686gXJ9DQmnKibNKtGYvOOg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/aGGTbgbA-K00C1x6C3TnS1atw8qK6FbpnG1Rc31yUrGoDcRRmgloEPbPya2UrwSL2VZihdMpahXq1x5lp_-k9zXfRsC6n_bg_pymBH_mHGYPtpzys9J0Fds5JRRTYCmOgRK-ANWA2Cg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/3oaIRujsVvFJxsHIhkwZRnhuRNwq1utRNgX_0Jxmb6t5wpS9RuEM2MBK74wZ_WUPks0PRIYKqgkWhAUtStA-E3qAtWUTMM_xgOrJ28q76pmbNRUpUaV2zrrI7UlZ5t41ZsU89v1mdo4=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/d552hnwOoAyOBC1oUoxuiNlqu--GCN9r9hf34eBF5R0udQYF3PTTi3q82ghzEL1sedKhaP_CoVNzKAAbfTdUgo4QNv10eXfMY9x3wYUwXHvbeh0r1eaIg-lozfja8eGJC97GIW-0l_w=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/2-8giTZs-CK2Qg3S5uiylu4sgIcNMCuFSyxULRceA9IeGcvQQ4zMOSYizXPZUVw3h9VwMZ62R72Pb8AUwX16vU8qao0I811mHR-Rq_xBOruw4T1Tu54E6gTGYU55K6N0jSpVwgGBo8U=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/whLK0g3qlh1QHpE5isiz6DqaBnvN-fYd_oQCxUOSOsNmvh7abd3gyw8g0unPmwpu9kc3oCTEOzW8tIqfEXtUMrf2LEixVdLVIGafcYP0rvrLKkTZHPCt7pIPsFGKvmPQ3wanutV1kII=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/hEPq0X-AwgOb8U079meRaDOcxqAui3tmJHHPTd6eoltm45pEaq7d_FhJBZbzFh2EJnOySu8rF3MHl5rz32ZkLDxQd3GiXWLSxgGyBUjoy4Z0gX0aFtm1CUJncyZnMJkuf9lyNJW1vWE=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/5e7fox-AlF1IKGrZQ3nOOpVjewtbpG5o17864SfHgn0uxlXyiQqBm-09qi8wR5usH-6mdNhF-EVKH58PrLpnRTSL4rma2XvJyfPYjVHs7NVAq-un0ek1jIFvzkVI6SHdY465DVX47Cs=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/NbpNkVDwbLasEIlHwljYAiTxvCWDxFlfghDiv59dOIDuVwMPChFhaYImsRys0G-NPMhsL3Q-h3jLXBU2uYY6bE5tlFJcfGtoCY3rmZG-hi8eXiENCYuNw4dXF41y7vzrgZZ87nhMwbE=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/915tLY11pIfOoo9WZGhi6iZUqwt47mMkkReK6q7lEzYDd5VR_Z8XmEpq5nMMDLGtdLWvxDiM1oXLErUPmNMmZayv1PfWnPZUdlS0BucwVpEsHhjMLXCVrtSfzh20FQCN0R5VF-7ZFZw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/G0kyoG6DMVUqgoAy3SIezeCgcWalpWzA5z1BuAMkooojMyBOdIysT25o7QPvckB-j5IYq1r7ST_BkzsgQnKfIfb3xCMdpjv4AomzD7kEeF9qVRtvq__LxEhTZ_R4uXkbAlaNYtOjrFU=w1920-h1080"></object>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer bg-dark p-5 text-white">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-auto mb-4 mx-3">
+          <h4>Connect with Zack</h4>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-0">
+              <a href="https://linkedin.com/in/zagoodman" class="coolhover btn" title="Connect with Zack on LinkedIn" target="_blank">
+                <i class="fab fa-lg fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mx-0">
+              <a href="https://strava.com/athletes/zagoodman" class="coolhover btn" title="Connect with Zack on Strava" target="_blank">
+                <i class="fab fa-lg fa-strava" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mx-0">
+              <a href="https://instagram.com/zackagoodman" class="coolhover btn" title="Connect with Zack on Instragram" target="_blank">
+                <i class="fab fa-lg fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mx-0">
+              <a href="https://facebook.com/zackagoodman" class="coolhover btn" title="Connect with Zack on Facebook" target="_blank">
+                <i class="fab fa-lg fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mx-0">
+              <a href="https://www.quora.com/profile/Zack-A-Goodman" class="coolhover btn" title="Connect with Zack on Quora" target="_blank">
+                <i class="fab fa-lg fa-quora" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mx-0">
+              <a href="https://www.medium.com/@zagoodman" class="coolhover btn" title="Connect with Zack on Medium" target="_blank">
+                <i class="fab fa-lg fa-medium-m" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <p class="text-center smfont">Copyright © 2020 Zack Goodman. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6d4ec7207e.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+  <script>
+    $('.carousel').carousel({
+      interval: false,
+    })
+  </script>
+
 </body>
+
 </html>
