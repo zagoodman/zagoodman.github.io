@@ -2,7 +2,7 @@
 layout: post
 title:  "Cyclical Keto: What, Why, How"
 author: zack
-categories: false
+categories: []
 image: '/assets/images/2021/ckd/cyclicalketo.png'
 description: "How to improve longevity and endurance performance through diet while maintaining sanity"
 featured: false

@@ -2,7 +2,7 @@
 layout: post
 title:  "Endurance Thermodynamics: how much fuel do you need?"
 author: zack
-categories: false
+categories: []
 image: '/assets/images/2021/imthermo/cradle.jpg'
 description: "Calculating macronutrient needs in an Ironman"
 featured: false
