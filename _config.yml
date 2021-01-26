@@ -1,0 +1,54 @@
+# Site
+name: "Zack A. Goodman"
+title: "Personal website of Zack A. Goodman"
+description: "Website of Zack A. Goodman, including his projects and writing."
+logo: '/assets/images/logo.png'
+favicon: '/assets/images/logo.png'
+baseurl: ''
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  zack:
+    name: Zack A. Goodman
+    display_name: Zack A. Goodman
+    email: zgoodman@ucsd.edu
+    web: https://zagoodman.com/
+    instagram: https://instagram.com/zackagoodman
+    strava: https://strava.com/athletes/zagoodman
+    description: "Economics PhD Candidate at UC San Diego."
+    profpic_square: '/assets/images/zack_square.jpg'
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jemoji
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+# Pagination
+paginate: 6
+paginate_path: '/writing/page:num/'
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+exclude: [LICENSE.txt, README.md, Gemfile, Gemfile.lock]
